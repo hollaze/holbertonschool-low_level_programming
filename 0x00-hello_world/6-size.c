@@ -1,5 +1,15 @@
 #include <stdio.h>
 
+/*
+*main
+*Print char
+*Print int
+*Print long int
+*Print long long int
+*float
+*Return(0)
+*/
+
 int main(void)
 {
 	printf("\" Size of a char : %zu byte(s)", sizeof(char));
@@ -10,13 +20,3 @@ int main(void)
 	
 	return(0)
 }
-
-/*
-*main
-*Print char
-*Print int
-*Print long int
-*Print long long int
-*float
-*Return(0)
-*/
