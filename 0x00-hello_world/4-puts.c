@@ -6,7 +6,7 @@ int main(void)
 	return(0);
 }
 
-/**
+/*
  * main - prints string
  *
  * Return: 0 if Success
