@@ -1,10 +1,10 @@
 #include <stdio.h>
 
-/*
-*main
-*print                                                                                                                  *printf
-*return0
-*/
+/**
+ *main
+ *print                                                                                                                  *printf
+ *return0
+ */
 
 int main(void)
 {
