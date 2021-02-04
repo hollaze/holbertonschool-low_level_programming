@@ -11,8 +11,11 @@ int main(void)
 
 int base = 0;
 
-while (base++ <= 9)
-putchar ((base + '0'));
+while (base <= 9)
+{
+putchar (base + '0');
+base++;
+}
 
 putchar ('\n');
 
