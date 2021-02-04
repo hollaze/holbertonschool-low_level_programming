@@ -13,14 +13,16 @@
 int main(void)
 {
 
-char alphabet, alphabetMAJ;
+char alphabet, alphabetMAJ = 'A';
 
 for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-{
-	putchar(alphabet);
-for (alphabetMAJ = 'A'; alphabetMAJ <= 'Z'; alphabetMAJ++)
-	putchar(alphabetMAJ);
-}
+putchar(alphabet);
+
+while (alphabetMAJ <= 'Z')
+putchar(alphabetMAJ++);
+
+putchar('\n');
+
 
 return (0);
 }
