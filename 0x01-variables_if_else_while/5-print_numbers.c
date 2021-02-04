@@ -10,8 +10,9 @@ int main(void)
 {
 
 char base = '0';
+char nine = '9';
 
-while (0 <= 10)
+while (base <= nine)
 putchar(base++);
 
 putchar('\n');
