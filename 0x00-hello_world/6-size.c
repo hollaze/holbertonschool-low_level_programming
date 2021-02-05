@@ -1,14 +1,10 @@
 #include <stdio.h>
 
-/*
-*main
-*Print char
-*Print int
-*Print long int
-*Print long long int
-*float
-*Return(0)
-*/
+/**
+ * main - print byte(s) sizes
+ *
+ * Return: Always 0 (Success)
+ */
 
 int main(void)
 {
