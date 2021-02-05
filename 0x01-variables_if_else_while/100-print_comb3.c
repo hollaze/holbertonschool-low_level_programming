@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - commentaire
+ * main - nested loop 01 to 89
  *
  *
  *
