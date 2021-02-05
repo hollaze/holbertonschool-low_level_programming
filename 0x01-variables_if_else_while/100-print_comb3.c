@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - nested loop 00 to 99
+ * main - commentaire
  *
  *
  *
@@ -13,24 +13,21 @@ int main(void)
 
 int numbers0, numbers1;
 
-for (numbers0 = 0; numbers0 <= 9; numbers0++)
+for (numbers0 = 0; numbers0 <= 8; numbers0++)
+{
+for (numbers1 = numbers0 + 1; numbers1 <= 9; numbers1++)
 {
 
-for (numbers1 = 0; numbers1 <= 9; numbers1++)
-{
 	putchar(numbers0 + '0');
 	putchar(numbers1 + '0');
 
-
-	if (numbers0 != 9 || numbers1 != 9)
+	if (numbers0 != 8  || numbers1 != 9)
 	{
 	putchar(',');
 	putchar(' ');
 	}
 }
-
 }
-
 	putchar('\n');
 
 return (0);
