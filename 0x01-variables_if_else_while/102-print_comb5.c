@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - commentaire
+ * main - Nested loops - printing 00 01 to 98 99
  *
  *
  *
@@ -33,8 +33,8 @@ for (numbers1 = numbers0 + 1; numbers1 <= 99; numbers1++)
 
 
 
-} //For numbers1
-} //For numbers0
+} /* For numbers1 */
+} /* For number0 */
 
 	putchar('\n');
 
