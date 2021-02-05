@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - nested loops 012 to 789                                                                                           *
+ * main - nested loops 012 to 789
  *
  *
  * Return: Always 0 (Success)
