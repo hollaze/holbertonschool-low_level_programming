@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <ctype.h>
+#include "holberton.h"
 
 /**
  * main - checking lowercase characters

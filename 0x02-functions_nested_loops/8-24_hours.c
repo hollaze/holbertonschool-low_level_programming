@@ -1,6 +1,6 @@
-
 #include <stdio.h>
 #include <ctype.h>
+#include "holberton.h"
 
 /**
  * main - print time per minute on a day
