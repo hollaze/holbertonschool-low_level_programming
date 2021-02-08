@@ -3,7 +3,7 @@
 #include <ctype.h>
 
 /**
- * main -
+ * main - print time per minute on a day
  *
  *
  *
@@ -19,16 +19,37 @@ return (0);
 }
 
 /**
- * jack_bauer - 
- *
- *
- * Return:
+ * jack_bauer - from 00:00 to 23:59
  */
 
 void jack_bauer(void)
 {
-do dt_time =  dhms("01jan2018",0,0,0) to dhms("01jan2018",23,59,59) by 60;
-  output;
-end;
-run;
+
+int hour0, hour1;
+int minute0, minute1;
+
+for (hour0 = 0; hour0 <= 2; hour0++)
+{
+for (hour1 = 0; hour1 <= 9; hour1++)
+{
+for (minute0 = 0; minute0 <= 5; minute0++)
+{
+for (minute1 = 0; minute1 <= 9; minute1++)
+{
+
+if (hour1 <= 3) /* If it's different from 23:59 then print */
+{
+putchar(hour0 + '0');
+putchar(hour1 + '0');
+putchar(':');
+putchar(minute0 + '0');
+putchar(minute1 + '0');
+putchar('\n');
+}
+
+} /* For minute1 */
+} /* For minute0 */
+} /* For hour1 */
+} /* For hour0 */
+
 }
