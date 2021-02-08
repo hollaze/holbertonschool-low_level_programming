@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - commentaire
+ * main - prints Holberton followed by new line
  *
  *
  *
@@ -11,7 +11,17 @@
 int main(void)
 {
 
-puts("Holberton\n");
+putchar('H');
+putchar('o');
+putchar('l');
+putchar('b');
+putchar('e');
+putchar('r');
+putchar('t');
+putchar('o');
+putchar('n');
+
+putchar('\n');
 
 return (0);
 }
