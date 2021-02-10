@@ -1,22 +1,4 @@
-#include <stdio.h>
-#include <ctype.h>
 #include "holberton.h"
-
-/**
- * main - function isalpha
- *
- *
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-
-int _isalpha(int c);
-
-return (0);
-}
 
 /**
  * _isalpha - check if c is character
@@ -27,12 +9,9 @@ return (0);
 
 int _isalpha(int c)
 {
-
-int true = 1, false = 0;
-
-if (isalpha(c))
-return (true);
+if ((c <= 'z' && c >= 'a') || (c <= 'Z' && c >= 'A'))
+return (1);
 
 else
-return (false);
+return (0);
 }

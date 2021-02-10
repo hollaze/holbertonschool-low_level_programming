@@ -1,22 +1,4 @@
-#include <stdio.h>
-#include <ctype.h>
 #include "holberton.h"
-
-/**
- * main - checking lowercase characters
- *
- *
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-
-int _islower(int c);
-
-return (0);
-}
 
 /**
  * _islower - check if c is lowercase character
@@ -27,12 +9,9 @@ return (0);
 
 int _islower(int c)
 {
-
-int true = 1, false = 0;
-
-if (islower(c))
-return (true);
+if (c <= 'z' && c >= 'a')
+return (1);
 
 else
-return (false);
+return (0);
 }
