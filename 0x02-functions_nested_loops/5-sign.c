@@ -1,21 +1,4 @@
-#include <stdio.h>
-#include <ctype.h>
-
-/**
- * main - printing number sign
- *
- *
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-
-int print_sign(int n);
-
-return (0);
-}
+#include "holberton.h"
 
 /**
  * print_sign - print the sign of a number
@@ -30,21 +13,12 @@ int print_sign(int n)
 int greater = 1, isZero = 0, less = -1;
 
 if (n > 0)
-{
-putchar(ispunct(n));
 return (greater);
-}
 
 else if (n == 0)
-{
-putchar(ispunct(n));
 return (isZero);
-}
 
 else
-{
-putchar(ispunct(n));
 return (less);
-}
 
 }
