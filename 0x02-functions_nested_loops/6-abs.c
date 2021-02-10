@@ -1,24 +1,4 @@
-#include <stdio.h>
-#include <ctype.h>
-#include <stdlib.h>
 #include "holberton.h"
-
-/**
- * main - checking absolute numbers
- *
- *
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-
-
-int _abs(int j);
-
-return (0);
-}
 
 /**
  * _abs - print absolute value of an integer
@@ -30,6 +10,11 @@ return (0);
 int _abs(int j)
 {
 
-return (abs(j));
+if (j < 0)
+{
+j = j * -1;
+}
+
+return (j);
 
 }

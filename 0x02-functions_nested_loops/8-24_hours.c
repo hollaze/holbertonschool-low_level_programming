@@ -1,22 +1,4 @@
-#include <stdio.h>
-#include <ctype.h>
 #include "holberton.h"
-
-/**
- * main - print time per minute on a day
- *
- *
- *
- * Return: Always 0 (Success)
- */
-
-int main(void)
-{
-
-void jack_bauer(void);
-
-return (0);
-}
 
 /**
  * jack_bauer - from 00:00 to 23:59
@@ -39,12 +21,12 @@ for (minute1 = 0; minute1 <= 9; minute1++)
 
 if (hour1 <= 3) /* If it's different from 23:59 then print */
 {
-putchar(hour0 + '0');
-putchar(hour1 + '0');
-putchar(':');
-putchar(minute0 + '0');
-putchar(minute1 + '0');
-putchar('\n');
+_putchar(hour0 + '0');
+_putchar(hour1 + '0');
+_putchar(':');
+_putchar(minute0 + '0');
+_putchar(minute1 + '0');
+_putchar('\n');
 }
 
 } /* For minute1 */
