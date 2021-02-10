@@ -9,16 +9,27 @@
 
 int print_sign(int n)
 {
-
-int greater = 1, isZero = 0, less = -1;
+char c;
 
 if (n > 0)
-return (greater);
+{
+c = '+';
+_putchar(c);
+return (1);
+}
 
 else if (n == 0)
-return (isZero);
+{
+c = '0';
+_putchar(c);
+return (0);
+}
 
 else
-return (less);
+{
+c = '-'
+_putchar(c);
+return (-1);
+}
 
 }

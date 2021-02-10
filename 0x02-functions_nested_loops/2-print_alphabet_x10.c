@@ -6,13 +6,13 @@
 
 void print_alphabet_x10(void)
 {
-char alphabet;
+char c;
 
 for (int loopX10 = 0; loopX10 < 10; loopX10++)
 {
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+for (c = 'a'; c <= 'z'; c++)
 {
-_putchar(alphabet);
+_putchar(c);
 }
 }
 
