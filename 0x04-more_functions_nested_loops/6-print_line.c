@@ -20,5 +20,5 @@ _putchar('_');
 
 } /* for loop */
 } /* if loop */
-
+_putchar('\n');
 }
