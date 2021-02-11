@@ -28,6 +28,7 @@ if (n > 0)
 
 } /* if n>0 */
 
+else
 _putchar('\n');
 
 }
