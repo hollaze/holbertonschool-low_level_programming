@@ -20,10 +20,5 @@ _putchar('_');
 
 } /* for loop */
 } /* if loop */
-
-else
 _putchar('\n');
-
-_putchar('\n');
-
 }

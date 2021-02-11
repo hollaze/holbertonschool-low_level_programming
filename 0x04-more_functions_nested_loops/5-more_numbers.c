@@ -16,11 +16,9 @@ for (numbers = 0; numbers <= 14; numbers++)
 	if (numbers > 9)
 	{
 	_putchar((numbers / 10) + '0');
-	_putchar((numbers % 10) + '0');
 	}
 
-	else
-	_putchar(numbers + '0');
+	_putchar((numbers % 10) + '0');
 }
 	_putchar('\n');
 }
