@@ -1,11 +1,9 @@
 #include "holberton.h"
 
 /**
- *
  * _isdigit - check if c is digit
  * @c: the variable to be check
  * Return: 1 if c is a digit. 0 otherwise
- *
  */
 
 int _isdigit(int c)
@@ -15,6 +13,4 @@ int _isdigit(int c)
 
 	else
 	return (0);
-
-	_putchar('\n');
 }
