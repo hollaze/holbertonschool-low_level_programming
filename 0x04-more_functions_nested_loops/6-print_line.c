@@ -13,7 +13,7 @@ int loop;
 if (n > 0)
 {
 
-for (loop = 0; loop <= n; loop++)
+for (loop = 0; loop < n; loop++)
 {
 
 _putchar('_');
