@@ -16,14 +16,11 @@ for (i = 2; number > 1; i++)
 	if ((number % i) == 0)
 	{
 	number = number / i;
-	printf("Prime factor : ");
-	printf("%u", i);
-	putchar('\n');
 	}
 
 }
 
-printf("%u", i);
+printf("%u", i - 1);
 
 return (0);
 
