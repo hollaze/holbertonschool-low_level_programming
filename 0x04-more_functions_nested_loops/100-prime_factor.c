@@ -23,6 +23,8 @@ for (i = 2; number > 1; i++)
 
 }
 
+printf("%u", i);
+
 return (0);
 
 }
