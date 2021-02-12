@@ -14,30 +14,26 @@ int i;
 	{
 
 		if (i % 3 == 0 && i % 5 == 0)
-		{
 		printf("FizzBuzz");
-		putchar(' ');
-		}
+
 
 		else if (i % 3 == 0)
-		{
 		printf("Fizz");
-		putchar(' ');
-		}
 
-		else if (i % 5 == 0 && i <= 100)
-		{
+
+		else if (i % 5 == 0)
 		printf("Buzz");
-		putchar(' ');
-		}
+
 
 		else
-		{
 		printf("%u", i);
-		putchar(' ');
-		}
 
+
+		if (i < 100)
+		putchar(' ');
+
+		else
+		putchar('\n');
 	}
 
-	putchar('\n');
 }
