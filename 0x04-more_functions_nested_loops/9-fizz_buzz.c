@@ -7,7 +7,7 @@
 
 int main(void)
 {
-int i, j, x;
+int i;
 
 
 	for (i = 1; i <= 100; i++)
@@ -19,7 +19,7 @@ int i, j, x;
 	putchar(' ');
 	}
 
-	else if (i % 5 == 0 && i < 100)
+	else if (i % 5 == 0 && i <= 100)
 	{
 	printf("Buzz");
 	putchar(' ');
@@ -33,4 +33,5 @@ int i, j, x;
 
 	}
 
+	putchar('\n');
 }
