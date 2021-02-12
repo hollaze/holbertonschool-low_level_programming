@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print numbers from 1 to 100; print Fizz if a multiple by 3; print Buzz if multiple by 5.
+ * main - print numbers from 1 to 100. Fizz multiple by 3. Buzz multiple by 5.
  * Return: Always 0
  */
 
