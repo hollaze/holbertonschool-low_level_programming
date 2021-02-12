@@ -21,6 +21,7 @@ for (i = 2; number > 1; i++)
 }
 
 printf("%u", i - 1);
+putchar('\n');
 
 return (0);
 
