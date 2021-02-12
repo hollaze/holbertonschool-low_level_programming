@@ -7,31 +7,34 @@
 void jack_bauer(void)
 {
 
-int hour0, hour1;
-int minute0, minute1;
+	int hour, minute, hTens, hUnits, mTens, mUnits;
 
-for (hour0 = 0; hour0 <= 2; hour0++)
-{
-for (hour1 = 0; hour1 <= 9; hour1++)
-{
-for (minute0 = 0; minute0 <= 5; minute0++)
-{
-for (minute1 = 0; minute1 <= 9; minute1++)
-{
+	for (hour = 0; hour <= 23; hour++)
+	{
 
-if (hour1 <= 3) /* If it's different from 23:59 then print */
-{
-_putchar(hour0 + '0');
-_putchar(hour1 + '0');
-_putchar(':');
-_putchar(minute0 + '0');
-_putchar(minute1 + '0');
-_putchar('\n');
-}
+		hTens = hour / 10;
+		hUnits = hour % 10;
 
-} /* For minute1 */
-} /* For minute0 */
-} /* For hour1 */
-} /* For hour0 */
+
+		for (minute = 0; minute <= 59; minute++)
+		{
+
+			mTens = minute / 10;
+			mUnits = minute % 10;
+
+			_putchar(hTens + '0');
+			_putchar(hUnits + '0');
+
+			_putchar(':');
+
+			_putchar(mTens + '0');
+			_putchar(mUnits + '0');
+
+			_putchar('\n');
+
+		} /* For minute */
+
+
+	} /* For hour */
 
 }
