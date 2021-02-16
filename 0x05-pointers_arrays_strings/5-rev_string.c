@@ -14,9 +14,9 @@ void rev_string(char *s)
 		length++;
 	} /* take s length, equivalent of sizeof */
 
-	for (i = length -1; i >= 0; i--)
+	for (i = length - 1; i >= 0; i--)
 	{
-		_putchar(s[i]);
+		s[i];
 	} /* take s out */
 
 }
