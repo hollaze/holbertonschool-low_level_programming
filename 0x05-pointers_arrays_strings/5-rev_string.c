@@ -14,7 +14,8 @@ void rev_string(char *s)
 	while (s[index] != '\0')
 		index++;
 
-	int max = index - 1; /* End of *s */
+	int max;
+	max = index - 1; /* End of *s */
 	int min;	     /* Begining of *s */
 
 	for (min = 0; min < max; min++)
