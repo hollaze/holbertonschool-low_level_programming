@@ -15,8 +15,8 @@ void rev_string(char *s)
 		index++;
 
 	int max = 0;
-	max = index - 1; /* End of *s */
-	int min = 0;	     /* Begining of *s */
+	max = index - 1; /* End of s */
+	int min = 0;	     /* Begining of s */
 
 	for (min = 0; min < max; min++)
 	{
