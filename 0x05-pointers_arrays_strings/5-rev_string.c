@@ -8,15 +8,15 @@
 
 void rev_string(char *s)
 {
-	int temp;
+	int temp = 0;
 	int index = 0;
 
 	while (s[index] != '\0')
 		index++;
 
-	int max;
+	int max = 0;
 	max = index - 1; /* End of *s */
-	int min;	     /* Begining of *s */
+	int min = 0;	     /* Begining of *s */
 
 	for (min = 0; min < max; min++)
 	{
