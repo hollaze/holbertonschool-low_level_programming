@@ -17,10 +17,12 @@ void rev_string(char *s)
 	int max = index - 1; /* End of *s */
 	int min;	     /* Begining of *s */
 
-	for (min = 0; min < max; min++, max--)
+	for (min = 0; min < max; min++)
 	{
 		temp = s[min];
 		s[min] = s[max];
 		s[max] = temp;
+
+		max--;
 	}
 }
