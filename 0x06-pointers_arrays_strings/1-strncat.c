@@ -1,10 +1,11 @@
 #include "holberton.h"
 
 /**
+ * _strncat - concatenate two string with n character limitation
+ * @dest: string destination
+ * @src: string source
  *
- *
- *
- *
+ * Return: string
  */
 
 char *_strncat(char *dest, char *src, int n)
