@@ -1,6 +1,8 @@
 #include "holberton.h"
 
 /**
+ * _strncpy - copy n characters
+ *
  * @dest: string destination
  * @src: string source
  * @n: copy character limitation
