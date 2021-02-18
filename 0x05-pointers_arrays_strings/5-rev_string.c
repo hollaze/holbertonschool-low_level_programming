@@ -11,17 +11,14 @@ void rev_string(char *s)
 	int temp = 0;
 	int index = 0;
 	int max, min;
-	max = index - 1;
 
 	while (s[index] != '\0')
 		index++;
 
-	for (min = 0; min < max; min++)
+	for (min = 0, max = index - 1; min < max; min++, max--)
 	{
 		temp = s[min];
 		s[min] = s[max];
 		s[max] = temp;
-
-		max--;
 	}
 }
