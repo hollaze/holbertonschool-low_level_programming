@@ -17,9 +17,12 @@ void times_table(void)
 		{
 			result = column * horizontal;
 
+
 			if (result <= 9)
 			{
-				_putchar(' ');
+				if (horizontal > 0)
+					_putchar(' ');
+
 				_putchar(result + '0');
 			}
 
