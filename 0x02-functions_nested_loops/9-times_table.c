@@ -6,7 +6,6 @@
 
 void times_table(void)
 {
-
 	int column, horizontal; /* Index */
 	int row = 10; /* Limit value */
 	int result;
@@ -17,7 +16,6 @@ void times_table(void)
 		{
 			result = column * horizontal;
 
-
 			if (result <= 9)
 			{
 				if (horizontal > 0)
@@ -25,26 +23,18 @@ void times_table(void)
 
 				_putchar(result + '0');
 			}
-
-
 			else if (result > 9)
 			{
 				_putchar((result / 10) + '0');
 				_putchar((result % 10) + '0');
 			}
 
-
 			if (horizontal < 9)
 			{
 				_putchar(',');
 				_putchar(' ');
 			}
-
-
 		}
-
 		_putchar('\n');
-
 	}
-
 }
