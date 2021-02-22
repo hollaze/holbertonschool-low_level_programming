@@ -3,9 +3,9 @@
 /**
  * _strspn - gets the length of a prefix substring
  * @s: string
- * @accept: length of matching characters
+ * @accept: string
  *
- * Return: number of bytes in the initial segment of s wich consist onlu of bytes from accept
+ * Return: length of matching characters
  */
 
 unsigned int _strspn(char *s, char *accept)
