@@ -11,13 +11,20 @@
 unsigned int _strspn(char *s, char *accept)
 {
 
-	int i;
+	int i = 0, j = 0;
 
-	for (i = 0; s[i] != '\0' && accept[i] != '\0'; i++)
+	while (s[i] != '\0')
 	{
+		while (accept[j] != s[i])
+		{
+			if (accept[j] == '\0')
+				return (i);
 
+			i++;
+			j++;
+
+		}
 	}
-	i += 1; /* Adding the null termination as number 1 */
 
 	return (i);
 
