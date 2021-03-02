@@ -21,4 +21,6 @@ int main(void)
 
 	printf("%i\n", sum);
 
+return (0);
+
 }
