@@ -9,7 +9,7 @@ int main(void)
 {
 
 	int count = 50, i;
-	unsigned long long int fSum, fNum0 = 0, fNum1 = 1;
+	unsigned long long int fSum = 0, fNum0 = 0, fNum1 = 1;
 
 	for (i = 0; i < count; i++)
 	{
