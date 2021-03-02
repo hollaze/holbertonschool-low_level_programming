@@ -13,15 +13,12 @@ int main(int argc, char *argv[])
 {
 	int count, sum = 1;
 
-	if (argc > 1)
+	for (count = 1; count < argc; count++)
 	{
-		for (count = 1; count < argc; count++)
-		{
-			sum *= atoi(argv[count]);
-		}
+		sum *= atoi(argv[count]);
 	}
 
-	else if (argc < 1)
+	if (argc != 3)
 	{
 		puts("Error");
 		return (1);
