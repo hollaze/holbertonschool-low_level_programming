@@ -6,7 +6,7 @@
  */
 
 int main(void)
-{
+
 
 	int numbers = 0, sum = 0, limit = 1023;
 
