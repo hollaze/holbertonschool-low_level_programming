@@ -7,6 +7,34 @@
 
 int main(void)
 {
+
+	int numbers = 0, sum = 0, limit = 1023;
+
+	while (numbers <= limit)
+	{
+		if (numbers % 3 == 0 || numbers % 5 == 0)
+			sum += numbers;
+
+		numbers++;
+
+	}
+
+	printf("%i\n", sum);
+
+}
+
+
+
+
+
+
+/*
+
+	Add everytime there is a multiple of 3 or five, i juste liked this code but
+	i understood that this is not what is asked
+
+int main(void)
+{
 	int numbers, sum, multipleOfThree, multipleOfFive, limit = 1024;
 	int temp, a = 0;
 
@@ -16,7 +44,7 @@ int main(void)
 			sum = multipleOfThree + multipleOfFive;
 
 			temp = sum;
-			sum = a;		/* Switch to not print same numbers */
+			sum = a;		 Switch to not print same numbers
 			a = temp;
 
 			if (numbers % 3 == 0)
@@ -35,3 +63,5 @@ int main(void)
 
 return (0);
 }
+
+*/
