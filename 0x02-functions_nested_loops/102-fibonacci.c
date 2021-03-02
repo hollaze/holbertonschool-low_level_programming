@@ -8,7 +8,8 @@
 int main(void)
 {
 
-	int fNum0 = 0, fNum1 = 1, fSum = 0, count = 50, i;
+	int count = 50, i;
+	unsigned long long int fSum, fNum0 = 0, fNum1 = 1;
 
 	for (i = 0; i < count; i++)
 	{
@@ -16,7 +17,13 @@ int main(void)
 		fNum0 = fNum1;
 		fNum1 = fSum;
 
-		printf("%i, ", fSum);
+		printf("%llu", fSum);
+
+		if (i < 49)
+		{
+			putchar(',');
+			putchar(' ');
+		}
 	}
 
 	putchar('\n');
