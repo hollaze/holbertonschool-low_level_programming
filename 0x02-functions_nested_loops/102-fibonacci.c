@@ -9,7 +9,8 @@ int main(void)
 {
 
 	int count = 50, i;
-	long long int fSum = 0, fNum0 = 0, fNum1 = 1;
+	long int fNum0 = 0, fNum1 = 1;
+	long long int fSum = 0;
 
 	for (i = 0; i < count; i++)
 	{
