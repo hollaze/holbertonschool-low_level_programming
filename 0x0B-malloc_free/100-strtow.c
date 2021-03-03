@@ -13,10 +13,21 @@
 char **strtow(char *str)
 {
 
-	if (str == NULL)
+	char *s;
+	int len, i;
+
+	while (str[len] != '\0')
+		len++;
+
+	s = malloc(sizeof(char) * (len + 1));
+
+	if (str == NULL || *str == '\0' || s == NULL)
 		return (NULL);
 
 
-return (str);
+	for (i = 0; i < len; i++)
+		s[i] = str[len];
+
+return (s);
 
 }
