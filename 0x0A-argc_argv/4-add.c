@@ -3,6 +3,26 @@
 #include <ctype.h>
 
 /**
+ * IsNumber - check if argv is a number
+ * @isNumber: string
+ *
+ */
+
+int IsNumber(char  *isNumber)
+{
+
+	if (!isdigit(*isNumber))
+		return (0);
+
+	if (isNumber == '\0')
+		return (1);
+
+	else
+		return (IsNumber(isNumber + 1));
+
+}
+
+/**
  * main - adds positive numbers
  * @argc: argument count
  * @argv: argument vector
@@ -19,22 +39,21 @@ int main(int argc, char *argv[])
 
 		for (count = 1; count < argc; count++)
 		{
-			sum += atoi(argv[count]);
+
+			if (atoi(argv[count]) == IsNumber(argv[count]))
+			{
+				puts("Error");
+				return (1);
+			}
+
+			else
+				sum += atoi(argv[count]);
+
 		}
-
-
-		if (!isdigit(argv[count]))
 			printf("%d\n", sum);
-
-		else
-		{
-			puts("Error");
-			return (1);
-		}
-
 	}
 
 
-return(0);
+return (0);
 
 }
