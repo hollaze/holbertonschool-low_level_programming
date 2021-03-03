@@ -3,9 +3,10 @@
 #include <stdlib.h>
 
 /**
- * strtow - splits string into words
+ * argstostr - concatenates all arguments
  *
- * @str: string
+ * @ac: integer
+ * @av: char pointer to pointer
  *
  * Return: 0
  */
@@ -14,7 +15,7 @@ char *argstostr(int ac, char **av)
 {
 
 	if (ac == 0 || av == NULL)
-                return (NULL);
+		return (NULL);
 
 return (*av);
 
