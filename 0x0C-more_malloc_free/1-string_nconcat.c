@@ -18,6 +18,9 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	char *concat;
 	unsigned int i, j, limits2, lens1, lens2;
 
+	if (s1 == NULL || s2 == NULL)
+		return (""); /* Empty String */
+
 
 	while (s1[lens1] != '\0')
 		lens1++;
@@ -30,9 +33,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	concat = malloc((lens1 + limits2) + 1 * sizeof(char));
 
-
-	if (s1 == NULL || s2 == NULL)
-		return (""); /* Empty String */
 
 	if (concat == NULL)
 		return (NULL);
