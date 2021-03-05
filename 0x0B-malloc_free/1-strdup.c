@@ -14,20 +14,24 @@
 char *_strdup(char *str)
 {
 
-	char *ar;
+	char *sdup;
 	int i, len;
+
+	if (str == NULL)
+		return (NULL);
 
 	while (str[len] != '\0')
 		len++;
 
-	ar = malloc(sizeof(char) * (len + 1));
+	sdup = malloc(sizeof(char) * (len + 1));
 
-	if (ar == NULL || str == NULL)
+	if (sdup == NULL || sdup < str)
 		return (NULL);
 
 	for (i = 0; i < len; i++)
-		ar[i] = str[i];
+		sdup[i] = str[i];
 
-return (ar);
+
+return (sdup);
 
 }
