@@ -3,22 +3,22 @@
 /**
  * string_toupper - convert lowercase letters to uppercase
  *
- * @c: char to convert
+ * @s: string to convert
  *
- * Return: c
+ * Return: s
  */
 
-char *string_toupper(char *c)
+char *string_toupper(char *s)
 {
 
 	int i;
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		if (c[i] >= 'a' && c[i] <= 'z')
-			c[i] -= 32;
+		if (s[i] >= 'a' && s[i] <= 'z')
+			s[i] -= 32;
 	}
 
-return (c);
+return (s);
 
 }
