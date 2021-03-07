@@ -1,5 +1,3 @@
-#include <holberton.h>
-
 /**
  * reverse_array - reverse array of integers
  *
