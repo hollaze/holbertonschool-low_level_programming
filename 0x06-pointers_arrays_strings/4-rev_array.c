@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * reverse_array - reverse array of integers
  *
@@ -6,7 +8,7 @@
  *
  */
 
-void revers_array(int *a, int n)
+void reverse_array(int *a, int n)
 {
 
 	int temp, i, j;
