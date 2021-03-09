@@ -1,13 +1,15 @@
-#include <stdio.h>
+#ifndef DOG_HEADER
+#define DOG_HEADER
 
 /**
- * main - define new type struct dog
+ * struct dog - contain members
  *
- * Return: 0
+ * @name: name member
+ * @age: age member
+ * @owner: owner member
  */
 
-int main(void)
-{
+typedef struct dog dog_t;
 
 	struct dog {
 
@@ -17,6 +19,9 @@ int main(void)
 
 	};
 
-return (0);
+void init_dog(struct dog *d, char *name, float age, char *owner);
+void print_dog(struct dog *d);
+dog_t *new_dog(char *name, float age, char *owner);
+void free_dog(dog_t *d);
 
-}
+#endif
