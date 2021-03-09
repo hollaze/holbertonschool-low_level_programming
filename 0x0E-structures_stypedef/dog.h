@@ -1,5 +1,6 @@
 #ifndef DOG_HEADER
 #define DOG_HEADER
+typedef struct dog dog_t;
 
 /**
  * struct dog - contain members
@@ -8,8 +9,6 @@
  * @age: age member
  * @owner: owner member
  */
-
-typedef struct dog dog_t;
 
 	struct dog {
 
