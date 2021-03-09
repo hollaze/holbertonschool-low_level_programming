@@ -1,9 +1,10 @@
 #include <stdio.h>
+#include "dog.h"
 
 /**
  * free_dog -  free struct
  *
- * @d: 
+ * @d: pointer to be freed
  */
 
 void free_dog(dog_t *d)
