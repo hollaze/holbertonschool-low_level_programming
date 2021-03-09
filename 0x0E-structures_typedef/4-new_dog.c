@@ -51,6 +51,8 @@ return (dest);
  * @name: name member
  * @age: age member
  * @owner: owner member
+ *
+ * Return: pointer to struct
  */
 
 dog_t *new_dog(char *name, float age, char *owner)
