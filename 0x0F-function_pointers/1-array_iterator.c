@@ -2,7 +2,8 @@
 #include <stddef.h>
 
 /**
- * array_iterator - executes a function given as parameter on each element of an array
+ * array_iterator - executes a function given as parameter on each element
+ * of an array
  *
  * @array: pointer to int
  * @size: size of array
@@ -21,6 +22,4 @@ void array_iterator(int *array, size_t size, void (*action)(int))
 		action(array[len]);
 		len++;
 	}
-
-
 }
