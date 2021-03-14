@@ -1,11 +1,11 @@
 #include "calc.h"
 
 /**
- * get_op_func -
+ * get_op_func - check op_t
  *
- * @s:
+ * @s: string
  *
- * Return:
+ * Return: struct ops
  */
 
 int (*get_op_func(char *s))(int, int)
@@ -24,15 +24,12 @@ int (*get_op_func(char *s))(int, int)
 
     int i = 0;
 
-	if (s == NULL)
-		return (NULL);
 
-	while (i < 6)
+	while (i < 5)
 	{
 
-		ops[i].op[0] = *s;
 
-		if (ops[i].op[0] == *s)
+		if (ops[i].op[0] == s[0])
 			return (ops[i].f);
 
 		i++;
