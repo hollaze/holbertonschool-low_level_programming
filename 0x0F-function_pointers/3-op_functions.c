@@ -6,7 +6,7 @@
  * op_add - sum of a and b
  *
  * @a: int
- * @b! int
+ * @b: int
  *
  * Return: a+b
  */
@@ -31,7 +31,7 @@ int op_sub(int a, int b)
 }
 
 /**
- * op_sub - multiplication of a and b
+ * op_mul - multiplication of a and b
  *
  * @a: int
  * @b: int
@@ -39,13 +39,13 @@ int op_sub(int a, int b)
  * Return: a*b
  */
 
-int op_mul(int a , int b)
+int op_mul(int a, int b)
 {
 	return (a * b);
 }
 
 /**
- * op_sub - division of a and b
+ * op_div - division of a and b
  *
  * @a: int
  * @b: int
@@ -65,7 +65,7 @@ int op_div(int a, int b)
 }
 
 /**
- * op_sub - multiplication of a and b
+ * op_mod - multiplication of a and b
  *
  * @a: int
  * @b: int
