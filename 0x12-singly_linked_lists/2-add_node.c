@@ -4,6 +4,8 @@
  * add_node - add new node at the beginning of a list
  * @head: pointer to pointer of head node
  * @str: string to duplicate
+ *
+ * Return: new node
  */
 
 list_t *add_node(list_t **head, const char *str)
@@ -22,7 +24,9 @@ list_t *add_node(list_t **head, const char *str)
 	new->len = len;
 	new->str = strdup(str);
 
-		*head = new;
+	new->next = *head;
+
+	*head = new;
 
 return (*head);
 
