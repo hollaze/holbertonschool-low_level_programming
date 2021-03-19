@@ -1,5 +1,5 @@
 section .rodata
-    msg:    db `Hello Holberton\n`, 16
+    msg:    db `Hello, Holberton\n`, 17
     msglen: equ $-msg
 
 section .text
