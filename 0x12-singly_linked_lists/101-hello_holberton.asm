@@ -1,19 +1,17 @@
 section .rodata
-    msg:    db `Hello, Holberton\n`, 17
-    msglen: equ $-msg
+    format: db 'Hello, %s', 16, 0
+    name:   db 'Holberton', 0
 
 section .text
-        global _start
-
-    _start:
-        ; write(1, msg, msglen)
-        mov rdi, 1
-        mov rsi, msg
-        mov rdx, msglen
-        mov rax, 1
-        syscall
-        ; exit(0)
-        mov rdi, 0
-        mov rax, 60
-        syscall
-
+        global main
+        extern printf
+    main:
+        ; printf(format, name)
+        mov rdi, format
+        mov rsi, name
+        ; no XMM registers
+        mov rax, 0
+        call printf
+        ; return 0
+        mov rax, 0
+        ret
