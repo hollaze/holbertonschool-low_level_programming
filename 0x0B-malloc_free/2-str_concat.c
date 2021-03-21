@@ -27,7 +27,7 @@ char *str_concat(char *s1, char *s2)
 
 	len = lens1 + lens2;
 
-	ps = malloc(sizeof(char) * (len));
+	ps = malloc(sizeof(char) * (len + 3));
 
 	if (ps == NULL)
 		return (NULL);
