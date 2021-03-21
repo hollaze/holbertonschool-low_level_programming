@@ -27,16 +27,16 @@ char *str_concat(char *s1, char *s2)
 
 	len = lens1 + lens2;
 
-	ps = malloc(sizeof(char) * (len + 3));
+	ps = malloc(sizeof(char) * (len + 1));
 
 	if (ps == NULL)
 		return (NULL);
 
 
-	for (i = 0; i < lens1; i++)
+	for (i = 0; s1[i]; i++)
 		ps[i] = s1[i];
 
-	for (j = 0; j < lens2; i++, j++)
+	for (j = 0; s2[j]; i++, j++)
 		ps[i] = s2[j];
 
 
