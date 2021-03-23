@@ -13,9 +13,7 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	listint_t *new, *temp;
 	unsigned int i = 0;
 
-	new = malloc(sizeof(listint_t));
-
-	if (new == NULL || head == NULL)
+	if (head == NULL || *head == NULL)
 		return (-1);
 
 	if (index == 0)
