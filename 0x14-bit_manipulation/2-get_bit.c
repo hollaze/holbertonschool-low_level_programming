@@ -4,6 +4,7 @@
  * get_bit - transform value into bits
  * @n: number to convert
  * @index: unsigned int
+ * Return: value
  */
 
 int get_bit(unsigned long int n, unsigned int index)
