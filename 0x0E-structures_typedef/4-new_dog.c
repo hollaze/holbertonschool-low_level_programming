@@ -88,9 +88,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	_strcpy(cpy_name, name);
 	_strcpy(cpy_owner, owner);
 
-	my_dog->name = name;
+	my_dog->name = cpy_name;
 	my_dog->age = age;
-	my_dog->owner = owner;
+	my_dog->owner = cpy_owner;
 
 return (my_dog);
 
