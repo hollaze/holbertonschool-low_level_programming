@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * cleat_bit - clear bits
+ * clear_bit - clear bits
  * @n: number
  * @index: unsigned int
  * Return: 1 if it worked, -1 if an error occurend
