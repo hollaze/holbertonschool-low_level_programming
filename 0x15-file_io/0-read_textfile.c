@@ -1,9 +1,4 @@
 #include "holberton.h"
-#include <unistd.h>
-#include <fcntl.h>
-#include <stdlib.h>
-#include <stddef.h>
-#include <stdio.h>
 
 /**
  * read_textfile - reads a text file and prints it to
