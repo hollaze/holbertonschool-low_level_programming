@@ -1,8 +1,7 @@
 #include "holberton.h"
 
 /**
- * read_textfile - reads a text file and prints it to the
- * POSIX standart output
+ * create_file - create a file
  * @filename: name of the file to create
  * @text_content: NULL terminated string to write the file
  * Return: 1 on success, -1 on failure
@@ -29,6 +28,7 @@ int create_file(const char *filename, char *text_content)
 
 	wr = write(file, text_content, len);
 
+	close(file);
 
 	if (wr == -1)
 		return (-1);
