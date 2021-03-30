@@ -1,10 +1,9 @@
 #include "holberton.h"
 #include <unistd.h>
-#include <stdio.h>
-#include <sys/types.h>
-#include <sys/stat.h>
 #include <fcntl.h>
 #include <stdlib.h>
+#include <stddef.h>
+#include <stdio.h>
 
 /**
  * read_textfile - reads a text file and prints it to
@@ -19,12 +18,9 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int file, rd, wr;
 	char *s;
 
-	if (filename == NULL)
-		return (0);
-
 	s = malloc(sizeof(char) * letters);
 
-	if (s == NULL)
+	if (s == NULL || filename == NULL)
 		return (0);
 
 	file = open(filename, O_RDONLY);
