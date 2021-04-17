@@ -11,12 +11,6 @@
 
 char *cap_string(char *s)
 {
-/*
-if -> string *s equal separators, s + 1 -> capitalize s[index + 1]
-checking separators: for each main string character, check the whole string of separators
-capitalizing -> character - 32
-s[index + 1] - 32
-*/
 	int i = 0, j = 0;
 	char *separators = " \t\n,;.!?\"(){}";
 
