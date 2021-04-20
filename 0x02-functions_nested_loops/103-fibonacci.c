@@ -21,7 +21,7 @@ int main(void)
 
 		if (fSum % 2 == 0)
 		{
-			printf("%li", fSum);
+			printf("%i", fSum);
 			count++;
 		}
 
