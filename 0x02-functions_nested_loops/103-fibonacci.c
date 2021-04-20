@@ -9,7 +9,7 @@
 int main(void)
 {
 
-	int count = 50, i;
+	int count = 0;
 	long int fNum0 = 0, fNum1 = 1;
 	long int fSum = 0, long int limit = 4000000;
 
@@ -20,9 +20,12 @@ int main(void)
 		fNum1 = fSum;
 
 		if (fSum % 2 == 0)
+		{
 			printf("%li", fSum);
+			count++;
+		}
 
-		if (i < 49)
+		if (i < count - 1)
 		{
 			putchar(',');
 			putchar(' ');
