@@ -21,7 +21,6 @@ int main(void)
 
 		if (fSum % 2 == 0)
 		{
-			printf("%i", fSum);
 			evenValue += fSum;
 			printf("%i", evenValue);
 			count++;
