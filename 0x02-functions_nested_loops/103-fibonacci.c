@@ -10,8 +10,8 @@ int main(void)
 {
 
 	int count = 0;
-	long int fNum0 = 0, fNum1 = 1;
-	long int fSum = 0, long int limit = 4000000;
+	int fNum0 = 0, fNum1 = 1;
+	int fSum = 0, limit = 4000000;
 
 	for (i = 0; fSum <= limit; i++)
 	{
