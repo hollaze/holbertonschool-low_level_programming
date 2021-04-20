@@ -9,7 +9,7 @@
 int main(void)
 {
 
-	int count = 0;
+	int count = 0, i;
 	int fNum0 = 0, fNum1 = 1;
 	int fSum = 0, limit = 4000000;
 
