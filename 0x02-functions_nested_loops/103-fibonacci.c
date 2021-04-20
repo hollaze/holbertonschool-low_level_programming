@@ -9,7 +9,7 @@
 int main(void)
 {
 
-	int count = 0, i;
+	int count = 0, i, temp;
 	int fNum0 = 0, fNum1 = 1, evenValue = 0;
 	int fSum = 0, limit = 4000000;
 
@@ -19,8 +19,11 @@ int main(void)
 		fNum0 = fNum1;
 		fNum1 = fSum;
 
-		if (evenValue += (fSum % 2 == 0))
+		if (fSum % 2 == 0)
 		{
+			temp = fSum;
+			evenValue += temp;
+			temp = 0;
 			printf("%i", evenValue);
 			count++;
 		}
