@@ -19,9 +19,8 @@ int main(void)
 		fNum0 = fNum1;
 		fNum1 = fSum;
 
-		if (fSum % 2 == 0)
+		if (evenValue += (fSum % 2 == 0))
 		{
-			evenValue += fSum;
 			printf("%i", evenValue);
 			count++;
 		}
