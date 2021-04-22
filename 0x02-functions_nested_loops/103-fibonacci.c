@@ -9,11 +9,11 @@
 int main(void)
 {
 
-	int count = 0, i, temp;
-	int fNum0 = 0, fNum1 = 1, evenValue = 0;
-	int fSum = 0, limit = 4000000;
+	int i;
+	int fNum0 = 0, fNum1 = 1, fSum = 0;
+	int evenValue = 0;
 
-	for (i = 0; fSum <= limit; i++)
+	for (i = 0; i < 32; i++)
 	{
 		fSum = fNum0 + fNum1;
 		fNum0 = fNum1;
@@ -21,17 +21,11 @@ int main(void)
 
 		if (fSum % 2 == 0)
 		{
-			temp = fSum;
-			evenValue += temp;
-			temp = 0;
+			/* need to modify ->   */
+			evenValue += fSum;
 			printf("%i", evenValue);
-			count++;
-		}
-
-		if (i < count - 1)
-		{
-			putchar(',');
-			putchar(' ');
+			if (i > 0 && i < 31)
+				printf(", ");
 		}
 	}
 
