@@ -1,5 +1,10 @@
 #include "holberton.h"
 
+/**
+ * print_number - print any number without using printf
+ * @n: number used
+ */
+
 void print_number(int n)
 {
 	int pow = 1;
