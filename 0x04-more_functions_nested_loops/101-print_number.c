@@ -20,7 +20,7 @@ void print_number(int n)
 
 	while (pow != 0)
 	{
-		count += _putchar((nb / pow) + '0');
+		_putchar((nb / pow) + '0');
 
 		nb %= pow;
 		pow /= 10;
