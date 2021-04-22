@@ -20,14 +20,10 @@ int main(void)
 		fNum1 = fSum;
 
 		if (fSum % 2 == 0)
-		{
-			/* need to modify ->   */
 			evenValue += fSum;
-			printf("%i", evenValue);
-			if (i > 0 && i < 31)
-				printf(", ");
-		}
 	}
+
+	printf("%i", evenValue);
 
 	putchar('\n');
 
