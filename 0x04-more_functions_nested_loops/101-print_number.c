@@ -9,7 +9,6 @@ void print_number(int n)
 	{
 		_putchar('-');
 		nb = -n;
-		count += 1;
 	}
 
 	else
