@@ -8,27 +8,38 @@
  * Return: nth node or NULL if node doesn't exist
  */
 
-dlistint_t *get_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *new;
-
+	dlistint_t *new, *tmp;
 	unsigned int i = 0;
-
-	if (idx == 0)
-		return (add_dnodeint(h, n));
 
 	new = malloc(sizeof(dlistint_t));
 
-	if (*h == NULL || new == NULL)
+	if (h == NULL || new == NULL)
 		return (NULL);
 
-	while (*h != NULL && i < idx)
+	if (idx == 0)
+		add_dnodeint(h, n);
+
+	tmp = *h;
+
+	while (tmp != NULL && i < idx - 1)
 	{
-		*h = (*h)->next;
+		if (tmp->next == NULL)
+			return (NULL);
+
+		tmp = tmp->next;
 		i++;
 	}
 
-	add_dnodeint(h, n);
+	if (tmp->next == NULL)
+		add_dnodeint(h, n);
+
+	new->n = n;
+	new->prev = tmp;
+	new->next = tmp->next;
+	tmp->next->prev = new;
+	tmp->next = new;
 
 return (new);
 
