@@ -25,9 +25,9 @@ int main(void)
 					putchar(',');
 					putchar(' ');
 				}
-			}
-		}
-	}
+			}/* numbers2 */
+		}/* numbers1 */
+	}/* numbers0 */
 	putchar('\n');
 
 return (0);
