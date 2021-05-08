@@ -2,13 +2,13 @@
 #include <limits.h>
 
 /**
- * main - print first 50 fibonnacci numbers
+ * main - print first 50 fibonnacci numbers, starting with 1 and 2
+ * 
  * Return: 0
  */
 
 int main(void)
 {
-
 	int count = 50, i;
 	long int fNum0 = 0, fNum1 = 1;
 	long int fSum = 0;
@@ -27,10 +27,8 @@ int main(void)
 			putchar(' ');
 		}
 	}
-
 	putchar('\n');
 
 return (0);
-
 }
 
