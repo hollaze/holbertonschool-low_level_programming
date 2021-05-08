@@ -3,7 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main - randomize n, print n and print last digit
+ * main - randomize n, print n and last digit of n
  *
  * Return: 0 Always (Success)
  */
