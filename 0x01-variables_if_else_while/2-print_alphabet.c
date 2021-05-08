@@ -1,10 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point, commentaire
- *
- * initialization of char alphabet
- * for loop for printing alphabet
+ * main - print alphabet
  *
  * Return: Always 0 (Success)
  */
