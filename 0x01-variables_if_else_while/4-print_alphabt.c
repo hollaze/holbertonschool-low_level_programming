@@ -15,20 +15,12 @@ int main(void)
 
 char alphabet;
 
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-{
-	if (alphabet == 'q' || alphabet == 'e')
+	for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
 	{
-	continue;
+		if (alphabet != 'q' && alphabet != 'Q')
+			putchar(alphabet);
 	}
-
-	else
-	{
-	putchar(alphabet);
-	}
-}
-
-putchar('\n');
+	putchar('\n');
 
 return (0);
 }

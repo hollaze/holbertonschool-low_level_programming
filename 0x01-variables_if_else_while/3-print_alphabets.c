@@ -12,17 +12,16 @@
 
 int main(void)
 {
+    char alphabet, alphabetMAJ = 'A';
 
-char alphabet, alphabetMAJ = 'A';
+    /* I was testing two differents loops for my firsts loops in C */
+    for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
+        putchar(alphabet);
 
-for (alphabet = 'a'; alphabet <= 'z'; alphabet++)
-putchar(alphabet);
+    while (alphabetMAJ <= 'Z')
+        putchar(alphabetMAJ++);
 
-while (alphabetMAJ <= 'Z')
-putchar(alphabetMAJ++);
-
-putchar('\n');
-
+    putchar('\n');
 
 return (0);
 }
