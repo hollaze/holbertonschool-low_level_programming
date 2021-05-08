@@ -3,11 +3,7 @@
 #include <stdlib.h>
 
 /**
- * main - Entry point, prints random n
- *
- * integer n
- * randomizing n
- * if sections for n
+ * main - prints random n
  *
  * Return: Always 0 (Success)
  */
@@ -28,5 +24,5 @@ int main(void)
 	else
 		printf("%d is negative\n", n);
 
-return (0);
+return (0)
 }
