@@ -1,8 +1,8 @@
 #include "holberton.h"
 
 /**
- * print_number - print any number without using printf
- * @n: number used
+ * print_number - print an integer using _putchar
+ * @n: number to print
  */
 
 void print_number(int n)
