@@ -1,37 +1,27 @@
 #include "holberton.h"
 
 /**
- * print_triangle - print miror triangle
+ * print_triangle - prints a triangle
  * @size: size of triangle
  */
 
 void print_triangle(int size)
 {
-int i, j;
+	int row, column;
 
-if (size > 0)
-{
-
-	for (i = 1; i <= size; ++i)
+	if (size > 0)
 	{
-
-		for (j = 0; j <= size - 1; ++j)
+		for (row = 1; row <= size; ++row)
 		{
-
-		if (j < (size - i))
-		_putchar(' ');
-
-		else
-		_putchar('#');
-
+			for (column = 0; column <= size - 1; ++column)
+			{
+				if (column < (size - row))
+					_putchar(' ');
+				else
+					_putchar('#');
 		}
-
-	_putchar('\n');
+			_putchar('\n');
+		}
 	}
-
-}
-
-else
-_putchar('\n');
-
+	_putchar('\n');
 }
