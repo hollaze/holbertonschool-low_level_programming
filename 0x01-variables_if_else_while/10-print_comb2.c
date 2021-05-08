@@ -6,6 +6,7 @@
  * Return: Always 0 (Success)
  */
 
+/* Not a requested exercice */
 int main(void)
 {
 	int numbers0, numbers1;
