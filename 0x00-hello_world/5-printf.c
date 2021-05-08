@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - print
+ * main - print format
  *
  * Return: Always 0 (Success)
  */
