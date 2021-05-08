@@ -1,11 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - Entry point, print alphabet in min and maj
- *
- * initialization of min and maj alphabet
- * for loop -> print min alphabet
- * nested for loop -> print maj alphabet
+ * main - print alphabet in lowercase and uppercase
  *
  * Return: Always 0 (Success)
  */
