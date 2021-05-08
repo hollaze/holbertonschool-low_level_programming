@@ -4,8 +4,6 @@
 /**
  * main - prints Holberton followed by new line
  *
- *
- *
  * Return: Always 0 (Success)
  */
 
