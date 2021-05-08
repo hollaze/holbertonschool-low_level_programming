@@ -2,13 +2,13 @@
 #include <limits.h>
 
 /**
- * main - print first 50 fibonnacci numbers
+ * main - in the first 50 fibonacci numbers, finds and prints the sum of the even-valued terms
+ * 
  * Return: 0
  */
 
 int main(void)
 {
-
 	int i;
 	int fNum0 = 0, fNum1 = 1, fSum = 0;
 	int evenValue = 0;
@@ -22,11 +22,7 @@ int main(void)
 		if (fSum % 2 == 0)
 			evenValue += fSum;
 	}
-
-	printf("%i", evenValue);
-
-	putchar('\n');
+	printf("%i\n", evenValue);
 
 return (0);
-
 }
