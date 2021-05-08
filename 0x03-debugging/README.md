@@ -1,4 +1,4 @@
-## 0x03-debugging
+## 0x03 - debugging
 
 In this project, I mainly needed to learn about :
 > What is debugging
