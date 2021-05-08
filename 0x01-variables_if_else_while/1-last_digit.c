@@ -5,11 +5,6 @@
 /**
  * main - randomize n, print n and print last digit
  *
- * initialization of int and and l
- * changing l value to detect last digit
- * randomizing n value
- * If conditions of n
- *
  * Return: 0 Always (Success)
  */
 
