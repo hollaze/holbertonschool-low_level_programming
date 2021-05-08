@@ -1,21 +1,19 @@
 #include <stdio.h>
 
 /**
- * main - de 0 à 10
+ * main - print 0 to 9
  *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
+    char base = '0', nine = '9';
 
-char base = '0';
-char nine = '9';
+    while (base <= nine)
+        putchar(base++);
 
-while (base <= nine)
-putchar(base++);
-
-putchar('\n');
+    putchar('\n');
 
 return (0);
 }
