@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main -print all possible combinations of double single-digits numbers
+ * main - print all possible combinations of double single-digits numbers
  *
  * Return: Always 0 (Success)
  */
