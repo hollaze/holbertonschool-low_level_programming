@@ -11,4 +11,6 @@ In this project, I mainly needed to learn about :
 
 > How to use while loops - for loops
 
+> How to use nested loops
+
 > What is the ASCII
