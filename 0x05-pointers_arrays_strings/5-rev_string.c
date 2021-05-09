@@ -5,17 +5,15 @@
  * @s: string
  */
 
-
 void rev_string(char *s)
 {
-	int temp = 0;
-	int index = 0;
+	int temp = 0, i = 0;
 	int max, min;
 
-	while (s[index] != '\0')
-		index++;
+	while (s[i] != '\0')
+		i++;
 
-	for (min = 0, max = index - 1; min < max; min++, max--)
+	for (min = 0, max = i - 1; min < max; min++, max--)
 	{
 		temp = s[min];
 		s[min] = s[max];
