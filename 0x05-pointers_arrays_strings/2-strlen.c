@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * _strlen - return length of string
+ * _strlen - return length of a string
  * @s: string
  * Return: always 0
  */
@@ -14,5 +14,4 @@ int _strlen(char *s)
 		length++;
 
 return (length);
-
 }
