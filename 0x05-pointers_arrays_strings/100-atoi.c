@@ -23,7 +23,8 @@ int _isdigit(int c)
 
 int _atoi(char *s)
 {
-	int total = 0, i, sign = 1;
+	unsigned int total = 0;
+	int i, sign = 1;
 
 	for (i = 0; s[i] != '\0'; i++)
 	{
