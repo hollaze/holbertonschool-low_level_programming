@@ -7,18 +7,15 @@
  * @src: string source
  * @n: copy character limitation
  *
- * Return: Limited string copy
+ * Return: copied string
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
-
 	int i;
 
 	for (i = 0; i < n && src[i] != '\0'; i++)
-	{
 		dest[i] = src[i];
-	}
 
 	while (i < n)
 	{
@@ -27,5 +24,4 @@ char *_strncpy(char *dest, char *src, int n)
 	}
 
 return (dest);
-
 }
