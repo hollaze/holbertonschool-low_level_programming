@@ -40,5 +40,5 @@ int _atoi(char *s)
 
 	total *= sign;
 
-	return (total);
+	return (total)
 }
