@@ -1,6 +1,4 @@
 #include "holberton.h"
-#include <stdio.h>
-#include <ctype.h>
 
 /**
  * cap_string - capitalizes all first letters of a word in a string
