@@ -1,7 +1,21 @@
 #include "holberton.h"
 
 /**
- * _atoi - convert string into integer
+ * _isdigit - checks for a digit (0 through 9)
+ * @c: variable to check
+ * Return: 1 if c is a digit. 0 otherwise
+ */
+
+int _isdigit(int c)
+{
+	if (c >= '0' && c <= '9')
+		return (1);
+
+	return (0);
+}
+
+/**
+ * _atoi - convert a string into integer
  * @s: string
  *
  * Return: if no number in string, return 0. convert otherwise
@@ -9,17 +23,21 @@
 
 int _atoi(char *s)
 {
+	int total = 0, i, sign = 1;
 
-	int result, i;
-
-	if (s[0] == '-')
-		return 
-
-	for (i = 0; *s != '\0'; i++)
+	for (i = 0; s[i] != '\0'; i++)
 	{
-		result = *s - '0' * 10
+		if (s[i] == '-')
+			sign *= -1;
+		if (_isdigit(s[i]))
+		{
+			total = (total * 10) + (s[i] - '0');
+			if (!_isdigit(s[i + 1]))
+				break;
+		}
 	}
 
-	return (0);
+	total *= sign;
 
+	return (total);
 }
