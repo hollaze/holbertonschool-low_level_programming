@@ -6,7 +6,7 @@
  * @src: string source
  * @n: concatenation limitation
  *
- * Return: string
+ * Return: dest
  */
 
 char *_strncat(char *dest, char *src, int n)
