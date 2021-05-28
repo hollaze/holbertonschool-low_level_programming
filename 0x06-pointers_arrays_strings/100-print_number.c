@@ -17,9 +17,7 @@ void print_number(int n)
 	}
 
 	if (number <= 9)
-	{
 		_putchar(number + '0');
-	}
 
 	if (number > 9)
 	{
