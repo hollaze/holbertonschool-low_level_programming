@@ -9,17 +9,31 @@
 
 unsigned int _strspn(char *s, char *accept)
 {
-	int i, j;
-	unsigned int count = 0;
+	int i = 0, j = 0, count = 0, len = 0;
 
-	for (i = 0; s[i] != '\0'; i++)
+	while (accept[len] != '\0')
+		len++;
+
+	while (accept[i] != '\0')
 	{
-		for (j = 0; accept[j] != '\0'; j++)
+		while (s[j] != '\0')
 		{
-			if (s[i] == accept[j])
+			if (accept[i] == s[j])
+			{
 				count++;
+				break;
+			}
+			j++;
 		}
+		j = 0;
+		i++;
 	}
-	/* Because it counts the two null characters */
-	return (count - 2);
+
+	if (count >= 1)
+	{
+		count += 1;
+		return (count);
+	}
+	else
+		return (0);
 }
