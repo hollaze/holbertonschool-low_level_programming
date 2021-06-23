@@ -17,9 +17,6 @@ char *_strstr(char *haystack, char *needle)
 	while (needle[len] != '\0')
 		len++;
 
-	if (len == 0)
-		return (NULL);
-
 	/*finding needle in haystack -> for loop comparison -> nested loops (2) -> compare elements of haystack & elements of needle*/
 	for (i = 0; haystack[i] != '\0'; i++)
 	{
