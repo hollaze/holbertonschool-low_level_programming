@@ -17,8 +17,6 @@ char *_strstr(char *haystack, char *needle)
 	while (needle[len] != '\0')
 		len++;
 
-	printf("%d\n", len);
-
 	if (len == 0)
 		return (NULL);
 
