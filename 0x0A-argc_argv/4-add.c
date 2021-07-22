@@ -4,21 +4,21 @@
 
 /**
  * IsNumber - check if argv is a number
- * @isNumber: string
- *
+ * @is_number: string
+ * Return: Number
  */
 
-int IsNumber(char  *isNumber)
+int IsNumber(char *is_number)
 {
 
-	if (!isdigit(*isNumber))
+	if (!isdigit(*is_number))
 		return (0);
 
-	if (isNumber == '\0')
+	if (*is_number == '\0')
 		return (1);
 
 	else
-		return (IsNumber(isNumber + 1));
+		return (IsNumber(is_number + 1));
 
 }
 
@@ -26,7 +26,6 @@ int IsNumber(char  *isNumber)
  * main - adds positive numbers
  * @argc: argument count
  * @argv: argument vector
- *
  * Return: 0
  */
 
