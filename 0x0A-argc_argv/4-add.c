@@ -1,58 +1,30 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <ctype.h>
-
-/**
- * IsNumber - check if argv is a number
- * @is_number: string
- * Return: Number
- */
-
-int IsNumber(char *is_number)
-{
-
-	if (!isdigit(*is_number))
-		return (0);
-
-	if (*is_number == '\0')
-		return (1);
-
-	else
-		return (IsNumber(is_number + 1));
-
-}
 
 /**
  * main - adds positive numbers
- * @argc: argument count
- * @argv: argument vector
- * Return: 0
+ * @argc: number of arguments
+ * @argv: arguments in form of string
+ * Return: 1 if error, 0 otherwise
  */
 
 int main(int argc, char *argv[])
 {
-	int count, sum = 0;
+	int i, j, sum = 0;
 
-	if (argc > 1)
+	for (i = 1; i < argc; i++)
 	{
-
-		for (count = 1; count < argc; count++)
+		for (j = 0; argv[i][j]; j++)
 		{
-
-			if (atoi(argv[count]) == IsNumber(argv[count]))
+			if (argv[i][j] < '0' || argv[i][j] > '9')
 			{
 				puts("Error");
 				return (1);
 			}
-
-			else
-				sum += atoi(argv[count]);
-
 		}
-			printf("%d\n", sum);
+		sum += atoi(argv[i]);
 	}
 
-
-return (0);
-
+	printf("%d\n", sum);
+	return (0);
 }
