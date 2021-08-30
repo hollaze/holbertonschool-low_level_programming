@@ -5,7 +5,7 @@
  * of integers using the linear search algorithm
  * @array: array of integers
  * @size: size of the array
- * @value: value to return
+ * @value: value searched
  * Return: index at which value is found, if error return -1
  */
 
